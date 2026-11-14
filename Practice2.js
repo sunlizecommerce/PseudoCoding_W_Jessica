@@ -111,13 +111,13 @@ function largestWord(string) {
   // Continue comparing with each word in the string until we find the largest word 
   
   /*words = SPLIT text into words using spaces
-    longestWord = ""
+    CurrentLongestWord = ""
 
     FOR EACH word IN words
-        IF word.length > longestWord.length
-            longestWord = word
+        IF word.length > currentLongestWord.length
+            currentLongestWord = word
 
 
-    RETURN longestWord */
+    RETURN currentLongestWord */
 }
 largestWord("I love JavaScript, even though it’s challenging");
