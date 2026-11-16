@@ -102,7 +102,14 @@ function largestWord(string) {
   let words = string.split(" ");
   console.log(words);
   // loop over our string 
-
+  let longest = ""; 
+  for(const item of words) {
+        if (item.length>longest.length) {
+            longest=item;
+        }
+  }
+    console.log(longest);
+    return longest;
   // Take words 1 by 1
   // Compare 2 words 
   // If two words are equal 
@@ -121,3 +128,4 @@ function largestWord(string) {
     RETURN currentLongestWord */
 }
 largestWord("I love JavaScript, even though it’s challenging");
+console.log(largestWord("I love JavaScript, even though it’s challenging"));
